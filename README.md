@@ -1,6 +1,6 @@
-# Hateaos Spring Boot
+# HATEOAS Spring Boot
 
-Small Spring Boot project based on Spring Boot 2.0.4 that probably included a bug
+Small Spring Boot project based on Spring Boot 2.0.4 that probably include a bug
 from Spring HATEOAS 0.25.0
 
 ## Configure
@@ -45,3 +45,7 @@ curl --request GET \
   --url http://localhost:8080/api/contacts \
   --header 'content-type: application/json'
 ```
+
+You can comment/uncomment the line in the `build.gradle` file to enable/disable
+the bug. Be careful with cache, I usually remove the `.gradle` and the `build` 
+directories to fully check the bug.
